@@ -1,9 +1,10 @@
+/* full reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* basic typography formatting*/
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -20,7 +21,7 @@ header {
   padding: 3rem 1rem;
   text-align: center;
 }
-
+/* grid layout formatting */
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -29,16 +30,17 @@ main {
   margin: 0 auto;
   padding: 2rem;
 }
-
+/* lyrics styling */
 article p {
   margin-bottom: 1.2rem;
 }
 
 blockquote {
   margin: 2rem 0;
+  border-left: 4px solid #7fd1c9;
+  padding-left: 1rem;
+  font-style: italic;
 }
-
-
 
 /* filter i used for checking contrast */
 /* html {
