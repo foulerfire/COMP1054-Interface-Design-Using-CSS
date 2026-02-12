@@ -4,26 +4,25 @@
   box-sizing: border-box;
 }
 
-h2{
-    font-family: 'Saira Stencil One';
-    font-size: 55px;
-}
-
-
 body {
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
   line-height: 1.6;
   background-color: #190f35;
   color: #eaeaea;
 }
 
+h2 {
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 55px;
+}
+
+header {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
 main {
   display: grid;
-  
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
   max-width: 1100px;
@@ -31,11 +30,8 @@ main {
   padding: 2rem;
 }
 
-header {
-  padding: 3rem 1rem;
-  text-align: center;
-}
+
 /* filter i used for checking contrast */
 /* html {
   filter: grayscale(100%);
-} */ */
+}  */
