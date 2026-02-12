@@ -41,10 +41,27 @@ blockquote {
   padding-left: 1rem;
   font-style: italic;
 }
+/* header 4 formatting */
+article h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+article h4 + blockquote {
+  margin-top: 0;
+}
+
 /* aside styling */
 aside {
   background-color: #24175c;
   padding: 1.5rem;
+}
+/*footer styling */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 2rem;
+  opacity: 0.7;
 }
 
 
