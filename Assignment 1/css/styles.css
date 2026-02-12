@@ -8,25 +8,55 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background-color: #190f35;
+  background-color: #222043;
   color: #eaeaea;
 }
 /* header styling */
 h2 {
+  text-decoration: underline;
   font-family: "Saira Stencil One", sans-serif;
   font-size: 55px;
+}
+
+
+h3 {
+  text-decoration: underline;
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 35px;
 }
 
 header {
   padding: 3rem 1rem;
   text-align: center;
+  position: relative;
+  /* linking and position header image */
+  background-image: url("../images/HeaderImage.png");
+  background-size: cover;
+  background-position: center 12%; /* changed percentage to center image */
+  background-repeat: no-repeat;
+
 }
+
+/* background image for header */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header h1,
+header h2 {
+  position: relative;
+  
+}
+
 /* grid layout formatting */
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  max-width: 1100px;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -37,7 +67,7 @@ article p {
 /* chorus specific styling */
 blockquote {
   margin: 2rem 0;
-  border-left: 4px solid #7fd1c9;
+  border-left: 4px solid #2b97b8;
   padding-left: 1rem;
   font-style: italic;
 }
@@ -53,7 +83,7 @@ article h4 + blockquote {
 
 /* aside styling */
 aside {
-  background-color: #24175c;
+  background-color: #64289b;
   padding: 1.5rem;
 }
 /*footer styling */
