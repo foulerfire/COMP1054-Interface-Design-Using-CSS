@@ -11,7 +11,7 @@ body {
   background-color: #190f35;
   color: #eaeaea;
 }
-
+/* header styling */
 h2 {
   font-family: "Saira Stencil One", sans-serif;
   font-size: 55px;
@@ -34,13 +34,19 @@ main {
 article p {
   margin-bottom: 1.2rem;
 }
-
+/* chorus specific styling */
 blockquote {
   margin: 2rem 0;
   border-left: 4px solid #7fd1c9;
   padding-left: 1rem;
   font-style: italic;
 }
+/* aside styling */
+aside {
+  background-color: #24175c;
+  padding: 1.5rem;
+}
+
 
 /* filter i used for checking contrast */
 /* html {
