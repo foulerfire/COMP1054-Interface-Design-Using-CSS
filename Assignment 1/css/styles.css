@@ -30,8 +30,9 @@ header {
   text-align: center;
   position: relative;
   /* linking and position header image */
-  background-image: url("../images/HeaderImage.png");
-  background-size: cover;
+  background-image: url("../images/HeaderImage.png"); 
+  /*Image credit -  https://www.reddit.com/r/ADTR/comments/fqql0x/widescreen_homesick_album_artwork_3858_x_1398/#lightbox
+  background-size: cover; */
   background-position: center 12%; /* changed percentage to center image */
   background-repeat: no-repeat;
 }
@@ -70,6 +71,8 @@ article {
   background-color: #174f73; 
   padding: 1rem 0rem 1rem 2rem;
   border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border: 2px solid #2b97b8;
 }
 /* lyrics styling */
 article p {
@@ -90,6 +93,8 @@ aside {
   background-color: #64289b;
   padding: 1.5rem;
   border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border: 2px solid #2b97b8;
 }
 
 aside img {
@@ -97,6 +102,7 @@ aside img {
   margin: 1rem 0;
   border-radius: 10px;
 }
+
 /*footer styling */
 footer {
   text-align: center;
