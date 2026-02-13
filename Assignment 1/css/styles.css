@@ -31,8 +31,7 @@ header {
   position: relative;
   /* linking and position header image */
   background-image: url("../images/HeaderImage.png"); 
-  /*Image credit -  https://www.reddit.com/r/ADTR/comments/fqql0x/widescreen_homesick_album_artwork_3858_x_1398/#lightbox
-  background-size: cover; */
+  /*Image credit -  https://www.reddit.com/r/ADTR/comments/fqql0x/widescreen_homesick_album_artwork_3858_x_1398/#lightbox*/ background-size: cover; 
   background-position: center 12%; /* changed percentage to center image */
   background-repeat: no-repeat;
 }
