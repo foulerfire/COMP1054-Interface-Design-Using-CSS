@@ -45,7 +45,6 @@ article > img {
     display: block;
 }
 
-
 /* main headline under image */
 article > h2:first-of-type {
     grid-column: 1 / 3;
@@ -56,4 +55,22 @@ article > h2:first-of-type {
     font-weight: 700;
     letter-spacing: -1px;
     color: #2a201d;
+}
+
+/* first paragraph under title */
+article > p:first-of-type {
+    grid-column: 1 / 3;
+    grid-row: 49 / span 9;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    color: #333;
+    text-align: center;
+    max-width: 92%;
+    justify-self: center;
+}
+
+/* Hunter Harrison name formatting */
+article > p:first-of-type strong {
+    color: #d77d2f;
 }
