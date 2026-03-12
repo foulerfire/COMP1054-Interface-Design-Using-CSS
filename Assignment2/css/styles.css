@@ -172,3 +172,10 @@ article q {
 article abbr {
     text-decoration: none;
 }
+/* author credit styling */
+article > p:last-of-type {
+    grid-column: 3;
+    grid-row: 56 / span 2;
+    text-align: right;
+    font-style: italic;
+}
