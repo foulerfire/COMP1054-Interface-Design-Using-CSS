@@ -74,3 +74,44 @@ article > p:first-of-type {
 article > p:first-of-type strong {
     color: #d77d2f;
 }
+
+/* right column alignment */
+article > h2:nth-of-type(5) {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+article > p:nth-of-type(5) {
+    grid-column: 3;
+    grid-row: 3 / span 9;
+}
+
+article > h2:nth-of-type(6) {
+    grid-column: 3;
+    grid-row: 12 / span 2;
+}
+
+article > p:nth-of-type(6) {
+    grid-column: 3;
+    grid-row: 14 / span 14;
+}
+
+article > h2:nth-of-type(7) {
+    grid-column: 3;
+    grid-row: 28 / span 2;
+}
+
+article > p:nth-of-type(7) {
+    grid-column: 3;
+    grid-row: 30 / span 10;
+}
+
+article > h2:nth-of-type(8) {
+    grid-column: 3;
+    grid-row: 40 / span 2;
+}
+
+article > p:nth-of-type(8) {
+    grid-column: 3;
+    grid-row: 42 / span 13;
+}
