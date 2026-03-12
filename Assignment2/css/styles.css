@@ -1,0 +1,18 @@
+
+/* Basic page styling */  
+body {
+    margin: 0;
+    background: #dcdcdc;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.45;
+}
+
+/* main white content area */
+#container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2.5rem 3.5rem 2rem;
+    box-sizing: border-box;
+}
