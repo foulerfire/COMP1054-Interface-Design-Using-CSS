@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* table structure */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+/* cell styling */
+td,
+th {
+    padding: 1rem 1.1rem;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* table header styling */
+thead th {
+    border-top: 1px solid #d9d9d9;
+    padding: 1rem 1.2rem;
+}
+
+/* zebra striping */
+tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9fbfd;
+}
+
+/* caption styling */
+caption {
+    font-size: 150%;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* team column alignment */
+thead th:nth-child(2),
+tbody th {
+    text-align: left;
+}
