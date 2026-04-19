@@ -164,8 +164,92 @@ nav a {
 	box-shadow: 0 0 8px rgba(125, 249, 255, 0.18);
 }
 
-nav a:hover,
-nav a:focus {
-	border-color: #ffe66d;
+
+
+
+
+/* main content spacing */
+main {
+	padding: 2rem 0;
+}
+
+/* article sections as arcade style panels */
+article section,
+#files .container,
+.profile,
+#styles .container {
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+	background: rgba(10, 18, 35, 0.92);
+	border: 2px solid #7df9ff;
+	box-shadow: 0 0 14px rgba(125, 249, 255, 0.12);
+}
+
+/* heading marker using >  */
+article h2::before,
+#styles h2::before,
+.profile h4::before {
+	content: ">";
+	margin-right: 0.45rem;
 	color: #ffe66d;
+}
+
+/* blockquote */
+blockquote {
+	margin: 1.5rem 0;
+	padding: 1rem 1.25rem;
+	border-left: 5px solid #ff77c8;
+	background: rgba(255, 119, 200, 0.08);
+}
+
+blockquote p {
+	margin-bottom: 0;
+}
+
+/* modern css examples button layout */
+#about section:nth-child(2) ul {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+#about section:nth-child(2) li {
+	padding: 0.45rem 0.7rem;
+	background: #1b1033;
+	border: 1px solid #ff77c8;
+}
+
+/* guideline button and similar links */
+.link-guidelines,
+.link-downloadcss,
+.link-downloadhtml,
+.link-allstyles,
+.profile .container > a,
+.page-footer [class^="link"] {
+	display: inline-block;
+	padding: 0.85rem 1.2rem;
+	background: #241243;
+	border: 2px solid #ff77c8;
+	color: #f3f7ff;
+	text-decoration: none;
+	text-align: center;
+	margin: 0.5rem 0.35rem 0 0;
+}
+
+/* hover link styling */
+.link-guidelines:hover,
+.link-downloadcss:hover,
+.link-downloadhtml:hover,
+.link-allstyles:hover,
+.profile .container > a:hover,
+.page-footer [class^="link"]:hover {
+	color: #ffe66d;
+	border-color: #ffe66d;
+}
+
+/* source files centering */
+#files {
+	text-align: center;
 }
