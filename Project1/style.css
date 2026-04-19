@@ -1,3 +1,5 @@
+/* glow effect reference https://unused-css.com/blog/css-outer-glow/ */
+
 @charset "UTF-8";
 /* reset to make layout sizing more predictable */
 html {
@@ -340,7 +342,7 @@ blockquote p {
 	}
 
 	header .container {
-		max-width: 900px;
+		max-width: 1900px;
 		padding: 2.5rem;
 		background: rgba(10, 18, 35, 0.88);
 		border: 3px solid #7df9ff;
@@ -361,14 +363,10 @@ blockquote p {
 		min-width: 9.5rem;
 	}
 
-	main > .container {
-		display: grid;
-		grid-template-columns: 2.5fr 1fr;
-		gap: 2.5rem;
-		align-items: start;
-		max-width: 1300px;
-		margin: 0 auto;
-	}
+main > .container {
+	max-width: 1760px;
+	margin: 0 auto;
+}
 
 	#about,
 	#guidelines,
