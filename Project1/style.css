@@ -43,3 +43,67 @@ body {
 body {
 	background: linear-gradient(to bottom, #050814, #0d1324, #111a31);
 }
+
+/* typography */
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.10rem;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #ffe66d;
+	text-shadow: 0 0 8px rgba(255, 230, 109, 0.6);
+}
+
+h2 {
+	font-size: 2 rem;
+	margin-bottom: 1rem;
+	color: #7df9ff;
+	text-shadow: 0 0 6px rgba(125, 249, 255, 0.45);
+}
+
+h3 {
+	font-size: 1rem;
+	margin-bottom: 0.75rem;
+	color: #ff77c8;
+}
+
+h4 {
+	font-size: 1rem;
+	margin-bottom: 0.75rem;
+	color: #ffe66d;
+}
+
+p,
+li {
+	font-size: 1rem;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+
+a {
+	color: #7df9ff;
+}
+
+a:hover,
+a:focus {
+	color: #ffe66d;
+}
