@@ -1,6 +1,7 @@
+@charset "UTF-8";
+
 /* glow effect reference https://unused-css.com/blog/css-outer-glow/ */
 
-@charset "UTF-8";
 /* reset to make layout sizing more predictable */
 html {
 	box-sizing: border-box;
@@ -229,7 +230,10 @@ blockquote p {
 	padding-left: 0;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.6rem;
+	gap: 0.5rem;
+	justify-content: center;
+	max-width: 1300px;
+	margin: 5 auto;
 }
 
 #about section:nth-child(2) li {
