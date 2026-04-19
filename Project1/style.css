@@ -124,8 +124,21 @@ header p {
 	margin-left: auto;
 }
 
+/* looked at how this person changed their github star svg https://stylestage.dev/styles/at-the-desk/ */
+[class^=link] svg, .profile .container > a svg {
+    fill: #ff77c8;
+    margin-right: 0.5em;
+    width: 1.5rem;
+    vertical-align: top;
+}
+[class^=link]:hover svg,.profile .container > a:hover svg {
+	fill: #ffe66d; /* hover color */
+}
+
 header .link-github {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
 	margin-top: 1rem;
 	padding: 0.8rem 1.2rem;
 	background: #201038;
@@ -135,9 +148,11 @@ header .link-github {
 	box-shadow: 0 0 10px rgba(255, 119, 200, 0.25);
 }
 
+
+
 /* nav */
 nav {
-	padding: 1rem 0;
+	padding: 1.5rem 0;
 	background: #120a24;
 	border-bottom: 2px solid #ff77c8;
 }
@@ -334,8 +349,8 @@ blockquote p {
 	}
 
 	header {
-		padding: 5rem 0 4rem;
-		min-height: 60vh;
+		padding: 2rem 0 2rem;
+		min-height: auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -355,18 +370,18 @@ blockquote p {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 0.75rem;
+		gap: 4.9rem;
 	}
 
 	nav a {
 		width: auto;
-		min-width: 9.5rem;
+		min-width: 10.5rem;
 	}
 
-main > .container {
-	max-width: 1760px;
-	margin: 0 auto;
-}
+	main > .container {
+		max-width: 1760px;
+		margin: 0 auto;
+	}
 
 	#about,
 	#guidelines,
