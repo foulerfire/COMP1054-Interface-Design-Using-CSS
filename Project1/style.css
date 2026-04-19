@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* reset to make layout sizing more predictable */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* basicc page setup */
+body {
+	margin: 0;
+	background: #070d18;
+	color: #f3f7ff;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 1.5;
+}
+
+.skip-link {
+	position: fixed;
+	top: 0.75rem;
+	left: 0.75rem;
+	padding: 0.5rem 0.75rem;
+	background: #241243;
+	color: #ffe66d;
+	text-decoration: none;
+	border: 2px solid #ffe66d;
+	z-index: 9999;
+	font-size: 1.00rem;
+}
+
+/* container width */
+.container {
+	width: 92%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* page background */
+body {
+	background: linear-gradient(to bottom, #050814, #0d1324, #111a31);
+}
