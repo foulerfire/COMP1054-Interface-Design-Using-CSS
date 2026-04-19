@@ -64,7 +64,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2 rem;
+	font-size: 2rem;
 	margin-bottom: 1rem;
 	color: #7df9ff;
 	text-shadow: 0 0 6px rgba(125, 249, 255, 0.45);
@@ -253,3 +253,70 @@ blockquote p {
 #files {
 	text-align: center;
 }
+
+
+
+/* currently staged style layout */
+.profile h4 {
+	text-align: center;
+}
+
+.profile ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 1rem;
+}
+
+.profile li {
+	margin-bottom: 0.5rem;
+}
+
+/* featured styles panel and buttons */
+.features {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	gap: 1rem;
+}
+
+.features li {
+	padding: 1rem;
+	background: linear-gradient(to bottom, #2b1650, #140a27);
+	border: 2px solid #7df9ff;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(125, 249, 255, 0.12);
+}
+
+.features li a {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	text-decoration: none;
+}
+
+
+
+/* footer style */
+.page-footer {
+	padding: 2rem 0;
+	background: #120a24;
+	border-top: 3px solid #ff77c8;
+}
+
+.page-footer .container > p:first-child {
+	color: #ffe66d;
+	font-weight: bold;
+	text-align: center;
+}
+
+.page-footer ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 1.5rem 0;
+	display: grid;
+	gap: 0.75rem;
+}
+
+
