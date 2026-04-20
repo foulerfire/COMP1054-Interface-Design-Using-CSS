@@ -76,7 +76,8 @@ h2 {
 h3 {
 	font-size: 1rem;
 	margin-bottom: 0.75rem;
-	color: #ff77c8;
+	color: #7df9ff;
+	text-shadow: 0 0 6px rgba(125, 249, 255, 0.45);
 }
 
 h4 {
@@ -414,26 +415,22 @@ blockquote p {
 
 	main > .container {
 		max-width: 1760px;
-		margin: 0 auto;
 	}
 
 	/* contribute sections on left, source files on right */
 	#contribute {
 		padding-top: 1rem;
-		width: 100%;
 		max-width: 1400px;
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		gap: 1rem;
-		align-items: stretch;
 	}
 
 	/* left side boxes */
 	#contribute > section.container {
 		width: 100%;
 		max-width: none;
-		margin: 0;
 	}
 
 	#contribute section:nth-of-type(1) {
@@ -458,7 +455,6 @@ blockquote p {
 		width: 100%;
 		max-width: none;
 		height: 100%;
-		margin: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -474,6 +470,10 @@ blockquote p {
 	}
 
 	.page-footer ul {
-		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
 	}
+
 }
