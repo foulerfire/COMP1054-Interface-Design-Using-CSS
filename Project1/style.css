@@ -149,8 +149,6 @@ header .link-github {
 	box-shadow: 0 0 10px rgba(255, 119, 200, 0.25);
 }
 
-
-
 /* nav */
 nav {
 	padding: 1.5rem 0;
@@ -181,10 +179,6 @@ nav a {
 	color: #f3f7ff;
 	box-shadow: 0 0 8px rgba(125, 249, 255, 0.18);
 }
-
-
-
-
 
 /* main content spacing */
 main {
@@ -233,7 +227,7 @@ blockquote p {
 	gap: 0.5rem;
 	justify-content: center;
 	max-width: 1300px;
-	margin: 5 auto;
+	margin: 0 auto;
 }
 
 #about section:nth-child(2) li {
@@ -248,6 +242,7 @@ blockquote p {
 .link-downloadhtml,
 .link-allstyles,
 .profile .container > a,
+#files .container a:last-child,
 .page-footer [class^="link"] {
 	display: inline-block;
 	padding: 0.85rem 1.2rem;
@@ -265,6 +260,7 @@ blockquote p {
 .link-downloadhtml:hover,
 .link-allstyles:hover,
 .profile .container > a:hover,
+#files .container a:last-child:hover,
 .page-footer [class^="link"]:hover {
 	color: #ffe66d;
 	border-color: #ffe66d;
@@ -317,8 +313,6 @@ blockquote p {
 	text-decoration: none;
 }
 
-
-
 /* footer style */
 .page-footer {
 	padding: 2rem 0;
@@ -340,8 +334,6 @@ blockquote p {
 	gap: 0.75rem;
 }
 
-
-
 /* desktop layout */
 @media (min-width: 900px) {
 	h1 {
@@ -353,8 +345,7 @@ blockquote p {
 	}
 
 	header {
-		padding: 2rem 0 2rem;
-		min-height: auto;
+		padding: 2rem 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -387,31 +378,59 @@ blockquote p {
 		margin: 0 auto;
 	}
 
-	#about,
-	#guidelines,
+	/* contribute sections on left, source files on right */
 	#contribute {
+		padding-top: 1.0rem;
+		
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto 2rem;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 1rem;
+		align-items: stretch;
+	}
+
+	/* left side boxes */
+	#contribute > section.container {
+		width: 100%;
+		max-width: none;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	#contribute section:nth-of-type(1) {
 		grid-column: 1;
+		grid-row: 1;
 	}
 
-	.profile,
-	#styles {
+	#contribute section:nth-of-type(2) {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	/* right side source files box */
+	#files {
 		grid-column: 2;
+		grid-row: 1 / span 2;
+		margin: 0;
+		height: 100%;
 	}
 
-	article section,
-	#files .container,
-	.profile,
-	#styles .container {
-		padding: 2rem;
-		border-width: 3px;
+	#files .container {
+		width: 100%;
+		max-width: none;
+		height: 100%;
+		margin: 0;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		gap: 4rem;
 	}
-
-	.features {
-		grid-template-columns: 1fr;
-	}
-
 	.features li {
-		min-height: 11rem;
+		min-height: 4rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
