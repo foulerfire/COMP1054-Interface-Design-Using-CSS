@@ -16,10 +16,10 @@ html {
 /* basicc page setup */
 body {
 	margin: 0;
-	background: #070d18;
 	color: #f3f7ff;
 	font-family: Verdana, Geneva, sans-serif;
 	line-height: 1.5;
+	background: linear-gradient(to bottom, #050814, #0d1324, #111a31);
 }
 
 .skip-link {
@@ -32,7 +32,7 @@ body {
 	text-decoration: none;
 	border: 2px solid #ffe66d;
 	z-index: 9999;
-	font-size: 1.00rem;
+	font-size: 1rem;
 }
 
 /* container width */
@@ -40,11 +40,6 @@ body {
 	width: 92%;
 	max-width: 1400px;
 	margin: 0 auto;
-}
-
-/* page background */
-body {
-	background: linear-gradient(to bottom, #050814, #0d1324, #111a31);
 }
 
 /* typography */
@@ -55,7 +50,7 @@ h4 {
 	margin-top: 0;
 	font-family: "Trebuchet MS", Arial, sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 0.10rem;
+	letter-spacing: 0.1rem;
 	line-height: 1;
 }
 
@@ -64,6 +59,7 @@ h1 {
 	margin-bottom: 1rem;
 	color: #ffe66d;
 	text-shadow: 0 0 8px rgba(255, 230, 109, 0.6);
+	text-decoration: underline;
 }
 
 h2 {
@@ -71,6 +67,10 @@ h2 {
 	margin-bottom: 1rem;
 	color: #7df9ff;
 	text-shadow: 0 0 6px rgba(125, 249, 255, 0.45);
+}
+
+#styles h2 {
+	text-align: center;
 }
 
 h3 {
@@ -115,7 +115,10 @@ a:focus {
 header {
 	padding: 3rem 0 2rem;
 	text-align: center;
-	background: linear-gradient(to bottom, rgba(125, 249, 255, 0.08), rgba(255, 119, 200, 0.12));
+	background: linear-gradient(rgba(10, 18, 35, 0.75), rgba(10, 18, 35, 0.75)),
+	url("https://as1.ftcdn.net/v2/jpg/05/09/27/82/1000_F_509278239_fkkwanP7vTmPiNPj5yRddZN2FwHSN91S.jpg");
+	background-size: cover;
+	background-position: center;
 	border-bottom: 3px solid #7df9ff;
 }
 
@@ -125,14 +128,15 @@ header p {
 	margin-left: auto;
 }
 
-/* looked at how this person changed their github star svg https://stylestage.dev/styles/at-the-desk/ */
-[class^=link] svg, .profile .container > a svg {
-    fill: #ff77c8;
-    margin-right: 0.5em;
-    width: 1.5rem;
-    vertical-align: top;
+/* looked at how this person changed their github star svg file https://stylestage.dev/styles/at-the-desk/ */
+[class^="link"] svg,.profile .container > a svg {
+	fill: #ff77c8;
+	margin-right: 0.5em;
+	width: 1.5rem;
+	vertical-align: top;
 }
-[class^=link]:hover svg,.profile .container > a:hover svg {
+
+[class^="link"]:hover svg,.profile .container > a:hover svg {
 	fill: #ffe66d; /* hover color */
 }
 
@@ -206,6 +210,17 @@ article h2::before,
 	color: #ffe66d;
 }
 
+/* space between setting stage and modern css*/
+#about section:first-of-type {
+	margin-bottom: 1rem;
+}
+
+/* guideline and about spacing */
+#about,
+#guidelines {
+	margin-bottom: 1rem;
+}
+
 /* blockquote */
 blockquote {
 	margin: 1.5rem 0;
@@ -228,10 +243,11 @@ blockquote p {
 	justify-content: center;
 	max-width: 1300px;
 	margin: 0 auto;
+	margin-bottom: 1rem;
 }
 
 #about section:nth-child(2) li {
-	padding: 0.45rem 0.7rem;
+	padding: 0.45rem 1.8rem;
 	background: #1b1033;
 	border: 1px solid #ff77c8;
 }
@@ -278,18 +294,21 @@ blockquote p {
 
 #files h3 {
 	font-size: 2rem;
+	text-decoration: underline;
 }
 
 /* currently staged style layout */
-
 .profile {
 	max-width: 1100px;
 	margin: 0 auto 2rem;
-	}
+}
 
 .profile .container {
 	width: 100%;
 	max-width: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .profile h4 {
@@ -308,12 +327,6 @@ blockquote p {
 	margin: 0;
 }
 
-.profile .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0rem;
-}
 /* featured styles panel and buttons */
 .features {
 	list-style: none;
@@ -406,11 +419,10 @@ blockquote p {
 
 	/* contribute sections on left, source files on right */
 	#contribute {
-		padding-top: 1.0rem;
-		
+		padding-top: 1rem;
 		width: 100%;
 		max-width: 1400px;
-		margin: 0 auto 2rem;
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		gap: 1rem;
@@ -422,7 +434,6 @@ blockquote p {
 		width: 100%;
 		max-width: none;
 		margin: 0;
-		box-sizing: border-box;
 	}
 
 	#contribute section:nth-of-type(1) {
@@ -448,13 +459,13 @@ blockquote p {
 		max-width: none;
 		height: 100%;
 		margin: 0;
-		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
 		gap: 2rem;
 	}
+
 	.features li {
 		min-height: 4rem;
 		display: flex;
